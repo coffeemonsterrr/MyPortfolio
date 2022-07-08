@@ -1,0 +1,239 @@
+:root{
+				--blue:#006ec3;
+				--dark-blue:#165687;
+			}
+			*{
+				font-family:"Poppins",sans-serif;
+			}
+			#pageHeader{
+				background:rgba(255,255,255,0.1);
+				box-shadow:0 4px 30px rgba(0,0,0,0.1);
+				backdrop-filter:blur(5px);
+				-webkit-backdrop-filter:blur(5px);
+			}
+			.introContainer{
+				margin:0;
+				padding:0;
+				width:100%;
+				height:auto;
+				background:url(../img/mikearce-banner.png) center center;
+				background-size:cover;
+				width:100%;
+				height:95vh;
+				position:relative;
+				z-index:1;
+				color:white;
+			}
+			
+			.intro{
+				width:400px;
+				height:100vh;
+				position:absolute;
+				top:150px;
+				font-size:1.1rem;
+			}
+			#name{
+				font-size:40px;
+				font-weight:900;
+			}
+			.aboutContainer{
+				width:100%;
+				height:auto;
+				background:#1f1f1f;
+				border-top:25px solid white;
+			}
+			.about{
+				
+			}
+			.typed-out1{
+				overflow:hidden;
+				border-right: .15em solid transparent;
+				white-space:nowrap;
+				animation: typing1 .5s steps(20, end) forwards, blink1 1s;				
+				width:0;
+				animation-delay:0.5s;
+			}
+			.typed-out2{
+				overflow:hidden;
+				border-right: .15em solid transparent;
+				white-space:nowrap;
+				animation: typing 1s steps(20, end) forwards, blink1 1s;				
+				width:0;
+				animation-delay:2s;
+			}
+			.typed-out3{
+				overflow:hidden;
+				border-right: .15em solid transparent;
+				white-space:nowrap;
+				animation: typing3 1s steps(20, end) forwards, blink 1s infinite;				
+				width:0;
+				animation-delay:3.5s;
+			}
+			@keyframes typing1{
+				0%{
+				width:0;
+				border-right:.15em solid white;
+				}
+				70%{
+				width:106px;
+				}
+				100%{
+				width:106px;}
+			}
+			@keyframes typing{
+				0%{
+					width:0;
+					border-right:.15em solid white;
+				}
+				70%{
+					width:100%;
+					border-right: .15em solid white;
+				}
+				100%{
+					width:100%;
+				}
+			}
+			@keyframes typing3{
+				from{
+					width:0;
+					border-right:.15em solid white;
+				}
+				to{
+					width:253px;
+					border-right:.15em solid white;
+				}
+			}
+			@keyframes blink{
+				from{
+					border-right:.15em solid transparent;
+				}
+				to{
+					border-right:.15em solid white;
+				}
+			}
+			@keyframes blink1{
+				0%{
+					border-right:.15em solid white;
+				}
+				25%{
+					border-right:.15em solid transparent;
+				}
+				50%{
+					border-right:.15em solid white;
+				}
+				75%{
+					border-right:.15em solid transparent;
+				}
+				90%{
+					border-right:.15em solid white;
+				}
+				100%{
+					border-right:.15em solid transparent;
+				}
+			}
+			.topNav{
+				width:50%;
+				position:relative;
+				overflow:hidden;
+			}
+			
+			.topNav div{
+				height:100%;
+				border:none;
+				outline:none;
+			}
+			.topNav div h6{
+				color:#f8f8f8;
+			}
+			.topNav div h6:after{
+				content:"";
+				display:block;
+				width:0;
+				margin-top:5px;
+				height:2px;
+				background:#f8f8f8;
+				transition:width .4s;
+			}
+			.topNav div h6:hover::after{
+				width:100%;
+			}
+			
+			.topNav div h5:hover{
+				transform:translateX(0%);
+				cursor:pointer;
+			}
+			
+			.social-links{
+				width:120px;
+			}
+			.social-links a{
+				color:white;
+				font-size:1.5rem;
+				padding:.5rem 1rem;
+				margin:0 5px;
+				background:rgba(255,255,255,0.5);
+				border-radius:10px;
+				transform:scale(1);
+				transition:transform ease 0.3s;
+			}
+			.social-links a:hover{
+				background:rgba(255,255,255,0.2);
+				transition:background ease 0.3s;
+				transform:scale(1.2);
+				transition:transform ease 0.3s;
+			}
+			
+			.social-links-footer{
+				width:auto;
+			}
+			.social-links-footer a{
+				color:white;
+				font-size:1.5rem;
+				padding:.5rem 1rem;
+				margin:0 5px;
+				background:rgba(255,255,255,0.5);
+				border-radius:10px;
+				transform:scale(1);
+				transition:transform ease 0.3s;
+			}
+			.social-links-footer a:hover{
+				background:rgba(255,255,255,0.2);
+				transition:background ease 0.3s;
+				transform:scale(1.2);
+				transition:transform ease 0.3s;
+			}
+			.desc{
+				width:35%;
+				font-size:1rem;
+			}
+			.desc pre{
+				font-family:"Poppins", sans-serif;
+			}
+			.desc p {
+				text-indent:25px;
+			}
+			.desc-title{
+				font-weight:900;
+				font-size:2.3rem;
+				background-image:linear-gradient(90deg,var(--blue),#f53253);
+				-webkit-background-clip:text;
+				-webkit-text-fill-color:transparent;
+			}
+			.mikeImg{
+				background:url(../img/placeholder.png) center center;
+				background-size:cover;
+				width:auto;
+				height:300px;
+				border-radius:25px;
+				transform:scale(1);
+				transition:transform 0.3s ease;
+				z-index:2;
+			}
+			.mikeImg:hover{
+				transform:scale(1.2);
+				transition:transform 0.3s ease;
+			}
+			.pageFooter{
+				height:30vh;
+				background:#666;
+			}

@@ -42,8 +42,11 @@ body{
 }
 .aboutContainer{
 	height:auto;
-	background:#1f1f1f;
+	background:url(../img/about-banner.png) center center;
+	background-repeat:no-repeat;
+	background-size:cover;
 	border-top:25px solid white;
+	width:auto;
 }
 
 .typed-out1{
@@ -133,9 +136,13 @@ body{
 	}
 }
 .topNav{
-	width:40%;
+	width:50%;
 	position:relative;
 	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-direction:row;
 }
 
 .topNav div{
@@ -219,6 +226,7 @@ body{
 	background-image:linear-gradient(90deg,var(--blue),#f53253);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+	overflow:hidden;
 }
 .mikeImg{
 	background:url(../img/mikearce-profile.png) center center;
@@ -236,7 +244,6 @@ body{
 	height:350px;
 	border-radius:25px;
 	z-index:9;
-	filter:drop-shadow(0px 0px 15px rgba(255,255,255,0.5));
 	transform:scale(1);
 	transition:transform 0.3s ease;
 }
@@ -252,4 +259,46 @@ body{
 .pageFooter{
 	height:30vh;
 	background:#666;
+}
+
+.mobileNav{
+	display:none;
+	
+}
+
+#mobileIllus{
+	display:none;
+}
+#desktopIllus{
+	display:block;
+}
+/* Mobile View*/
+
+@media only screen and (max-width: 768px){
+	.topNav{
+		display:none;
+	}
+	.mobileNav{
+		display:block;
+	}
+	#mydesc, #mygoal{
+		flex-direction:column;
+	}
+	.mikeImg{
+		margin: 0 auto;
+	}
+	.goalIllus{
+		margin:0 auto;
+	}
+	.desc{
+		width:100%;
+		padding:0 3rem;
+	}
+	#mobileIllus{
+	display:block;
+	}
+	#desktopIllus{
+		display:none;
+	}
+	
 }

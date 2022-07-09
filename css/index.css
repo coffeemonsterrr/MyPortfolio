@@ -142,7 +142,7 @@ body{
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
-	flex-direction:row;
+	flex-direction:column;
 }
 
 .topNav div{
@@ -295,7 +295,7 @@ body{
 		padding:0 3rem;
 	}
 	#mobileIllus{
-	display:block;
+		display:block;
 	}
 	#desktopIllus{
 		display:none;
